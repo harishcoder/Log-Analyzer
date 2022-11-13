@@ -34,7 +34,6 @@ public class LogService {
         List<LogData> logDataList = new ArrayList<>();
         BufferedReader reader;
         try{
-            System.out.println(new File(".").getAbsoluteFile());
             reader = new BufferedReader(new FileReader(logFilePath));
             String line = reader.readLine();
             while(line != null){
